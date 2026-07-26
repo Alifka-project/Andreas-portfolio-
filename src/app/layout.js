@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import { Work_Sans, Syne } from "next/font/google";
+import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.scss";
 
 import Head from "next/head";
@@ -10,8 +10,8 @@ const workSans = Work_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const syne = Syne({
-  variable: "--font-syne",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 });
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <body className={`${workSans.variable} ${syne.variable}`}>
+      <body className={`${workSans.variable} ${jakarta.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
