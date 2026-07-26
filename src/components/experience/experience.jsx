@@ -31,16 +31,8 @@ export default function Experience() {
           <div className={styles.content}>
             <Card
               icon={<IoBriefcase size={28} color="white" />}
-              title={"Q WEALTH AG, Switzerland"}
-              subtitle={"Partner & Executive Board Member"}
-              detail={
-                "Co-founded and built the firm with a focus on sustainable wealth management, securing FINMA licensing and ensuring regulatory compliance."
-              }
-            />
-            <Card
-              icon={<IoBriefcase size={28} color="white" />}
               title={"S&L Management and Consulting GmbH"}
-              subtitle={" Insurance Broker"}
+              subtitle={"Insurance Broker"}
               detail={
                 "Provided expert insurance brokerage services, risk assessment, and financial consulting to optimize client portfolios and ensure regulatory compliance."
               }
