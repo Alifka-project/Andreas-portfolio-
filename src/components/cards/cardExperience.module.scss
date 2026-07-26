@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  gap: 1rem;
+
+  > .icon {
+    margin-top: 4px;
+    height: 48px;
+    aspect-ratio: 1;
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .details {
+    display: flex;
+    flex-direction: column;
+
+    > .title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    > .subtitle {
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    > .detail {
+      font-size: 1.125rem;
+      font-weight: 300;
+    }
+  }
+}

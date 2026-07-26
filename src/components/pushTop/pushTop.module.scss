@@ -1,0 +1,15 @@
+.pushTop {
+  height: 5%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  background-color: var(--gold);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

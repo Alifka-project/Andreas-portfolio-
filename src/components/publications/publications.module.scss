@@ -1,0 +1,132 @@
+.publication {
+  scroll-margin-top: 75px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--albaster);
+  color: var(--text-dark);
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+    text-align: center;
+
+    > .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: -3rem;
+    }
+
+    > .subtitle {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    > .divider {
+      width: 100%;
+      border-top: 1px solid var(--erie-black);
+    }
+
+    > .seeMore {
+      width: fit-content;
+      height: fit-content;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      outline: 2px solid var(--gold);
+      text-decoration: none;
+      color: var(--gold);
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+
+      &:hover {
+        background-color: var(--gold);
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    > .card + .card {
+      border-top: 1px solid var(--erie-black);
+    }
+
+    > .card {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding-block: 2rem;
+      align-items: center;
+
+      > .title {
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 500;
+      }
+
+      > .description {
+        text-align: center;
+        width: 100%;
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+/* Medium screens (320px and up) */
+@media (min-width: 320px) {
+  .publication > .container {
+    > .title {
+      font-size: 1.25rem;
+    }
+    > .subtitle {
+      font-size: 2.125rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* Medium screens (768px and up) */
+@media (min-width: 768px) {
+  .publication > .container {
+    padding-inline: 4rem;
+
+    > .card {
+      grid-template-columns: 1fr 1fr;
+
+      > .title {
+        text-align: start;
+        font-size: 2rem;
+      }
+
+      > .description {
+        text-align: start;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Large screens (1280px and up) */
+@media (min-width: 1280px) {
+  .publication > .container {
+    min-width: 1280px;
+    max-width: 1440px;
+
+    > .card > .title {
+      font-size: 2.25rem;
+    }
+  }
+}

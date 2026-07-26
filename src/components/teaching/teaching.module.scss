@@ -1,0 +1,104 @@
+.teaching {
+  scroll-margin-top: 75px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--slate-gray);
+  color: var(--text-light);
+
+  > .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 3rem 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 3rem;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 55% 45%;
+      min-width: 1280px;
+      max-width: 1440px;
+      padding-left: 4rem;
+      padding-block: 4rem;
+    }
+
+    > .left {
+      display: flex;
+      flex-direction: column;
+      margin-block: 2rem;
+      padding-right: 0;
+
+      @media (min-width: 768px) {
+        margin-block: 3rem;
+      }
+
+      @media (min-width: 1024px) {
+        margin-block: 4rem;
+        padding-right: 1rem;
+      }
+
+      @media (min-width: 1280px) {
+        margin-block: 6rem;
+        padding-right: 2rem;
+      }
+
+      > .title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        color: var(--gold);
+
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      > .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media (min-width: 768px) {
+          gap: 2rem;
+        }
+      }
+    }
+
+    > .right {
+      height: 300px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        height: 400px;
+      }
+
+      @media (min-width: 1024px) {
+        height: 100%;
+      }
+
+      > .imagePlaceholder {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        @media (min-width: 1024px) {
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
