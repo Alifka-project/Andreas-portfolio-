@@ -37,13 +37,6 @@ export default function About() {
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 350px, (max-width: 1023px) 400px, (max-width: 1279px) 400px, 480px"
             />
           </GenericAnimation>
-          <a className={styles.cv} href="/Andreas_Svoboda_CV.pdf" download>
-            <div className={styles.text}>
-              DOWNLOAD
-              <br />
-              CV
-            </div>
-          </a>
         </div>
         <div className={styles.right}>
           <div className={styles.title}>A B O U T</div>

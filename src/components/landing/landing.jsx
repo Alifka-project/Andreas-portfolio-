@@ -15,7 +15,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 const stats = [
   { value: "20+", label: "Years in Finance" },
-  { value: "3", label: "Books Published" },
+  { value: "Author", label: "Of Multiple Books" },
   { value: "DBA", label: "· LL.M · CFP · FCCA" },
 ];
 

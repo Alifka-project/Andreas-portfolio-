@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Discover the expertise of Dr. Andreas Svoboda—finance and wealth planning expert, lecturer, and mentor. Explore research, achievements, and strategic insights.",
   keywords:
-    "Dr. Andreas Svoboda, Andreas Svoboda, Portfolio, Research, CV, Achievements, Lecturer, Mentor, Finance, Wealth, Planning Expert",
+    "Dr. Andreas Svoboda, Andreas Svoboda, Portfolio, Research, Achievements, Lecturer, Mentor, Finance, Wealth, Planning Expert",
   openGraph: {
     title:
       "Dr. Andreas Svoboda - Finance & Wealth Planning Expert | Lecturer & Mentor",
