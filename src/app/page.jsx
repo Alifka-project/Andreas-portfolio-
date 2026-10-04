@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import NavBar from "@/components/navbar/navbar";
 import Landing from "@/components/landing/landing";
 import Quote from "@/components/quote/quote";
+import AdvisoryTeaser from "@/components/advisoryTeaser/advisoryTeaser";
 import Skill from "@/components/skill/skill";
 import About from "@/components/about/about";
 import Experience from "@/components/experience/experience";
@@ -20,6 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <Landing />
         <Quote />
+        <AdvisoryTeaser />
         <Skill />
         <About />
         <Experience />

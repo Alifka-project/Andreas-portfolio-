@@ -53,6 +53,14 @@ export default function Experience() {
                 "Oversaw financial operations, ensuring regulatory compliance and financial stability within the international life insurance"
               }
             />
+            <Card
+              icon={<IoBriefcase size={28} color="white" />}
+              title={"Vision Goal GmbH"}
+              subtitle={"Founder · Executive Education"}
+              detail={
+                "Entrepreneurial work in executive education for finance professionals."
+              }
+            />
           </div>
         </div>
         <div className={styles.right}>

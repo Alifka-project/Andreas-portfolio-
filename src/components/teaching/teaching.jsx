@@ -31,27 +31,26 @@ export default function Teaching() {
           <div className={styles.content}>
             <Card
               icon={<IoSchool size={28} color="white" />}
-              title={"SBS Swiss Business School"}
-              subtitle={"Lecturer & Professor"}
-              detail={
-                "Educates students in finance, banking, and global markets, integrating real-world experience into academic curricula."
-              }
-            />
-            <Card
-              icon={<IoSchool size={28} color="white" />}
               title={"Swiss Distance University of Applied Sciences (FFHS)"}
-              subtitle={"Head of Finance and Leadership, Banking and Finance"}
-              detail={
-                "Leads academic programs, mentors students, and conducts research in financial risk management and investment decision"
+              href={
+                "https://www.ffhs.ch/de/ffhs/personen/person/svoboda-andreas"
               }
+              subtitle={"Lecturer | Banking and Finance"}
+              detail={"Lectures in banking and finance."}
             />
             <Card
               icon={<IoSchool size={28} color="white" />}
-              title={"Vision Goal GmbH"}
-              subtitle={"Founder & Lecturer"}
-              detail={
-                "Provides high-quality education and mentoring for finance professionals through specialized workshops on financial planning and wealth management."
-              }
+              title={"HSO"}
+              href={"https://www.hso.ch/"}
+              subtitle={"Lecturer | Accounting, Finance & Business"}
+              detail={"Lectures in accounting, finance and business."}
+            />
+            <Card
+              icon={<IoSchool size={28} color="white" />}
+              title={"UIBS"}
+              href={"https://www.uibs.org/campuses/zurich/"}
+              subtitle={"Professor | Finance & Financial Management"}
+              detail={"Professor of finance and financial management."}
             />
           </div>
         </div>

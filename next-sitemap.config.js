@@ -1,4 +1,12 @@
 module.exports = {
-  siteUrl: "https://www.andreassvoboda.com/", // Change to your domain
-  generateRobotsTxt: true, // Generate robots.txt file as well
+  siteUrl: "https://www.andreassvoboda.com/",
+  generateRobotsTxt: true,
+  additionalPaths: async () => [
+    {
+      loc: "/board-executive-advisory",
+      changefreq: "monthly",
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    },
+  ],
 };

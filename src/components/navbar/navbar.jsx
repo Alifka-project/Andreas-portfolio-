@@ -1,11 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./navbar.module.scss";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const links = [
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#certifications", label: "Certifications" },
+  { href: "/#teaching", label: "Teaching" },
+  { href: "/#publications", label: "Publications" },
+  { href: "/board-executive-advisory", label: "Board & Executive Advisory" },
+  { href: "/#contact", label: "Contact" },
+];
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   // const [currentLanguage, setCurrentLanguage] = useState("en");
 
   // const languages = [
@@ -23,7 +36,7 @@ export default function NavBar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <a className={styles.title} href="#home">
+        <a className={styles.title} href="/">
           Dr. Andreas Svoboda
         </a>
         <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
@@ -31,27 +44,18 @@ export default function NavBar() {
         </button>
         <div className={`${styles.guide} ${isOpen ? styles.open : ""}`}>
           <ol>
-            <a href="#home" onClick={() => setIsOpen(false)}>
-              Home
-            </a>
-            <a href="#about" onClick={() => setIsOpen(false)}>
-              About
-            </a>
-            <a href="#experience" onClick={() => setIsOpen(false)}>
-              Experience
-            </a>
-            <a href="#certifications" onClick={() => setIsOpen(false)}>
-              Certifications
-            </a>
-            <a href="#teaching" onClick={() => setIsOpen(false)}>
-              Teaching
-            </a>
-            <a href="#publications" onClick={() => setIsOpen(false)}>
-              Publications
-            </a>
-            <a href="#contact" onClick={() => setIsOpen(false)}>
-              Contact
-            </a>
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className={
+                  pathname === link.href ? styles.active : undefined
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
           </ol>
           {/* <div className={styles.languageSelector}>
             <button

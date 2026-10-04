@@ -1,9 +1,9 @@
 import styles from "./pushTop.module.scss";
 import { IoArrowUp } from "react-icons/io5";
 
-export default function PushTop() {
+export default function PushTop({ href = "#home" }) {
   return (
-    <a className={styles.pushTop} href="#home">
+    <a className={styles.pushTop} href={href}>
       <IoArrowUp size={28} />
     </a>
   );
