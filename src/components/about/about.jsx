@@ -46,7 +46,7 @@ export default function About() {
           </div>
           <div className={styles.detail}>
             <b>Dr. Andreas Svoboda</b> is a distinguished finance and insurance
-            expert with over two decades of experience.
+            expert with more than 30 years of experience.
             <br />
             <br />
             Holding a Doctor of Business Administration (DBA) and an LL.M. in
@@ -55,10 +55,9 @@ export default function About() {
             Accountants (FCCA).
             <br />
             <br />
-            His career encompasses leadership roles in prominent financial
-            institutions, academic contributions, and authorship, reflecting a
-            profound commitment to advancing financial literacy and ethical
-            practices.
+            His work spans executive leadership in financial services, board
+            and advisory work, and academic teaching, alongside authorship and
+            a commitment to financial literacy and ethical practice.
           </div>
         </div>
       </div>

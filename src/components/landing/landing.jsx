@@ -14,7 +14,7 @@ import {
 const ease = [0.22, 1, 0.36, 1];
 
 const stats = [
-  { value: "20+", label: "Years in Finance" },
+  { value: "30+", label: "Years in Finance" },
   { value: "Author", label: "Of Multiple Books" },
   { value: "DBA", label: "· LL.M · CFP · FCCA" },
 ];
@@ -81,12 +81,12 @@ export default function Landing() {
         <div className={styles.content}>
           <motion.div className={styles.badge} variants={item}>
             <span className={styles.badgeDot} />
-            Available for speaking &amp; mentoring
+            Executive, advisory and academic work
           </motion.div>
 
           <motion.p className={styles.kicker} variants={item}>
             <IoSparkles size={14} />
-            Finance · Mentorship · Wealth Strategy
+            Executive · Board Advisory · Academia
           </motion.p>
 
           <motion.h1 className={styles.name} variants={item}>
@@ -96,9 +96,15 @@ export default function Landing() {
           </motion.h1>
 
           <motion.p className={styles.bio} variants={item}>
-            Lecturer, mentor, and wealth planning expert helping people and
-            institutions navigate finance with clarity and confidence.
+            Financial-services executive, board advisor, and lecturer, with
+            more than 30 years across banking, insurance, wealth and pensions.
           </motion.p>
+
+          <motion.nav className={styles.pillars} variants={item} aria-label="Areas of work">
+            <a href="/#experience">Executive experience</a>
+            <a href="/board-executive-advisory">Board &amp; advisory</a>
+            <a href="/#teaching">Academic appointments</a>
+          </motion.nav>
 
           <motion.div className={styles.ctaGroup} variants={item}>
             <a className={styles.ctaPrimary} href="#about">

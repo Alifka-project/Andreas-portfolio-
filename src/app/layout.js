@@ -19,16 +19,16 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   metadataBase: new URL("https://andreassvoboda.com"),
   title:
-    "Dr. Andreas Svoboda - Finance & Wealth Planning Expert | Lecturer & Mentor",
+    "Dr. Andreas Svoboda | Executive, Board Advisor & Lecturer",
   description:
-    "Discover the expertise of Dr. Andreas Svoboda—finance and wealth planning expert, lecturer, and mentor. Explore research, achievements, and strategic insights.",
+    "Dr. Andreas Svoboda is a financial-services executive, board advisor and lecturer with more than 30 years of experience.",
   keywords:
     "Dr. Andreas Svoboda, Andreas Svoboda, Portfolio, Research, Achievements, Lecturer, Mentor, Finance, Wealth, Planning Expert",
   openGraph: {
     title:
-      "Dr. Andreas Svoboda - Finance & Wealth Planning Expert | Lecturer & Mentor",
+      "Dr. Andreas Svoboda | Executive, Board Advisor & Lecturer",
     description:
-      "Explore the expertise of Dr. Andreas Svoboda—finance and wealth planning expert, lecturer, and mentor. Discover research, achievements, and insights.",
+      "Executive leadership, board and advisory work, and academic teaching across banking, insurance, wealth and pensions.",
     url: "https://andreassvoboda.com",
     type: "website",
     images: [

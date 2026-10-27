@@ -9,10 +9,10 @@ const links = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About" },
   { href: "/#experience", label: "Experience" },
-  { href: "/#certifications", label: "Certifications" },
-  { href: "/#teaching", label: "Teaching" },
-  { href: "/#publications", label: "Publications" },
   { href: "/board-executive-advisory", label: "Board & Executive Advisory" },
+  { href: "/#teaching", label: "Teaching" },
+  { href: "/#certifications", label: "Certifications" },
+  { href: "/#publications", label: "Publications" },
   { href: "/#contact", label: "Contact" },
 ];
 
