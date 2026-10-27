@@ -17,6 +17,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://andreassvoboda.com"),
   title:
     "Dr. Andreas Svoboda - Finance & Wealth Planning Expert | Lecturer & Mentor",
   description:
@@ -28,12 +29,12 @@ export const metadata = {
       "Dr. Andreas Svoboda - Finance & Wealth Planning Expert | Lecturer & Mentor",
     description:
       "Explore the expertise of Dr. Andreas Svoboda—finance and wealth planning expert, lecturer, and mentor. Discover research, achievements, and insights.",
-    url: "https://www.andreassvoboda.com",
+    url: "https://andreassvoboda.com",
     type: "website",
     images: [
       "/logo.png",
       {
-        url: "https://www.andreassvoboda.com/person-landing.png",
+        url: "https://andreassvoboda.com/person-landing.png",
         width: 1200,
         height: 630,
         alt: "Dr. Andreas Svoboda - Finance & Wealth Planning Expert",
@@ -44,7 +45,7 @@ export const metadata = {
     icon: "/logo-rich-result.png",
   },
   alternates: {
-    canonical: "https://www.andreassvoboda.com/",
+    canonical: "https://andreassvoboda.com/",
   },
 };
 
@@ -61,8 +62,8 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              url: "https://www.andreassvoboda.com",
-              logo: "https://www.andreassvoboda.com/icon.png",
+              url: "https://andreassvoboda.com",
+              logo: "https://andreassvoboda.com/icon.png",
             }),
           }}
         />

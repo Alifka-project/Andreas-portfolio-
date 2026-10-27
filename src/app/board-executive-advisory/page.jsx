@@ -3,7 +3,7 @@ import PushTop from "@/components/pushTop/pushTop";
 import pageStyles from "../page.module.scss";
 import styles from "./advisory.module.scss";
 
-const canonical = "https://www.andreassvoboda.com/board-executive-advisory";
+const canonical = "https://andreassvoboda.com/board-executive-advisory";
 
 const supportAreas = [
   {
@@ -68,7 +68,7 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://www.andreassvoboda.com/#andreas-svoboda",
+      "@id": "https://andreassvoboda.com/#andreas-svoboda",
       name: "Andreas Svoboda",
       jobTitle: "Financial Services Executive & Board Advisor",
       url: canonical,
@@ -88,7 +88,7 @@ const structuredData = {
         "Board advisory, interim executive leadership and CFO/COO mandates for regulated financial services in Switzerland and internationally.",
       areaServed: ["Switzerland", "International"],
       provider: {
-        "@id": "https://www.andreassvoboda.com/#andreas-svoboda",
+        "@id": "https://andreassvoboda.com/#andreas-svoboda",
       },
       serviceType: supportAreas.map((item) => item.title),
     },

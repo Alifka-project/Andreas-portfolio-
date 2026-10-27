@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://www.andreassvoboda.com/",
+  siteUrl: "https://andreassvoboda.com/",
   generateRobotsTxt: true,
   additionalPaths: async () => [
     {
